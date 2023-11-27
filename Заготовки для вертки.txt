@@ -1,0 +1,171 @@
+Основные элементы
+
+Быстро анимировать что-либо:
+<div class="animated zoomIn ng-scope" style="animation-delay: 300ms; "></div>
+
+
+<ul class="list-group ng-scope" >
+    
+    
+    <li class="list-group-item">
+        <div class="animated zoomIn ng-scope" style="animation-delay: 300ms; ">
+        <i class="fa fa-dot-circle blue_text" aria-hidden="true"></i>  
+        </div>
+    </li>
+
+    
+</ul>
+
+1. Какие либо определения
+
+<div class="alert alert-primary" role="alert">
+    <div class="row">
+        <div class="col-md-2" style="display: inline-grid">   <span  class="fa-stack fa-2x" style="margin: auto">
+    <i class="fa-solid fa-circle fa-stack-2x"></i>
+    <i class="fa-solid fa-book fa-stack-1x fa-inverse"></i>
+  </span></div>
+        <div class="col-md-10" style="display: flex">
+            <p class="indent"  style="margin: auto"> Текст определения </p>
+        </div>
+    </div>
+</div>
+
+
+2. Картинки 
+
+ <div class=""><img class="rounded mx-auto d-block" style="width: 100%;" src="img/"></div>
+
+   Описание для картинки
+
+<p class="text-center text-muted ng-scope"><small><i class="fa fa-image red"></i>  Описание </small></p>
+
+   Картинка справа текст
+	<div class="row">
+    <div class="col-md-4"><div class=""><img class="rounded mx-auto d-block" src="img/2_17 (1).png"></div></div>
+    <div class="col-md-8">
+      <p>  Текст    </p>
+	  </div>
+	</div>
+
+
+3. Текст с плашкой слева
+
+<div class="bs-callout bs-callout-info animated zoomIn ng-scope" style="animation-delay: 500ms">
+	<p> Текст </p>
+</div>
+
+4.Список элементов
+
+<ul class="list-group ng-scope" >
+    <li class="list-group-item list-group-item-success" style="background-color: white">
+        <strong style="color: rgb(0, 32, 96);"> Разработка и реализация инвестиционного проекта осуществляется в несколько стадий, каждая из которых имеет свои цели и задачи:   </strong>
+    </li>
+
+    <li class="list-group-item"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>   1. Прединвестиционная – от предварительного исследования до окончательного решения о принятии инвестиционного проекта.   </li>
+    <li class="list-group-item"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>   2. Инвестиционная – включает проектирование, процедуры торгов и выбора генерального подрядчика, заключение контракта или договора подряда на строительные, монтажные работы и т. п.   </li>
+    <li class="list-group-item"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>   3. Эксплуатационная (производственная, операционная) стадия хозяйственной деятельности объекта (организации, предприятия).   </li>
+    <li class="list-group-item"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>   4. Ликвидационная, когда происходит ликвидация последствий реализации инвестиционного проекта.    </li>
+    <li class="list-group-item"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>   Каждая стадия инвестиционного процесса выполняется поэтапно.   </li>
+</ul>
+
+	<ul class="list-group ng-scope" >
+    
+            <li class="list-group-item list-group-item-success" style="background-color: white">
+                <strong style="color: rgb(0, 32, 96);"> Задачи и результаты:     </strong>
+            </li>
+            <li class="list-group-item"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>   ▶     </li>
+	    <li class="list-group-item"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>   —     </li>
+	    <li class="list-group-item"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>   •     </li>
+	    <li class="list-group-item"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>   ✔     </li>
+            
+        </ul>
+
+5. Таблица
+
+ Уменьшене отступов в таблице:
+
+	.table > :not(caption) > * > * {
+   	padding: 4px;
+   	background-color: var(--bs-table-bg);
+   	border-bottom-width: 1px;
+   	box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+	}
+
+
+
+
+<table class="table table-bordered table-hover" >
+    <tr class="success">
+        <td class="text-center" rowspan="2" style="vertical-align: middle"><strong>Основные характеристики</strong></td>
+        <td class="text-center" colspan="4"><strong>Сортировочные горки</strong></td>
+    </tr>
+    <tr class="info">
+        <td class="text-center" ><strong>Повышенной мощности (ГПМ)</strong></td>
+        <td class="text-center" ><strong>Большой мощности (ГБМ)</strong></td>
+        <td class="text-center" ><strong>Средней мощности (ГСМ)</strong></td>
+        <td class="text-center" ><strong>Малой мощности (ГММ)</strong></td>
+    </tr>
+    <tr>
+        <td class="text-center warning">Объем переработки,<br> ваг/сутки</td>
+        <td class="text-center" style="vertical-align: middle">Более 5500</td>
+        <td class="text-center" style="vertical-align: middle">3500 - 5500</td>
+        <td class="text-center" style="vertical-align: middle">1500-3500</td>
+        <td class="text-center" style="vertical-align: middle">250-1500</td>
+    </tr>
+    <tr>
+        <td class="text-left success" colspan="5"> &nbsp&nbsp <strong> Число путей</strong>: </td>
+    </tr>
+    <tr>
+        <td class="text-center warning">Сортировочных </td>
+        <td class="text-center">Более 40</td>
+        <td class="text-center">30-40</td>
+        <td class="text-center">17-29</td>
+        <td class="text-center">До 16</td>
+    </tr>
+    <tr>
+        <td class="text-center warning">Надвижных</td>
+        <td class="text-center">Более 3</td>
+        <td class="text-center">2-3</td>
+        <td class="text-center">1-2</td>
+        <td class="text-center">1</td>
+    </tr>
+    <tr>
+        <td class="text-center warning">Спускных </td>
+        <td class="text-center">2-3</td>
+        <td class="text-center">2</td>
+        <td class="text-center">1-2</td>
+        <td class="text-center">1</td>
+    </tr>
+    <tr>
+        <td class="text-center warning">Число тормозных позиций</td>
+        <td class="text-center" style="vertical-align: middle">3</td>
+        <td class="text-center" style="vertical-align: middle">3</td>
+        <td class="text-center" style="vertical-align: middle">2</td>
+        <td class="text-center" style="vertical-align: middle">1</td>
+    </tr>
+</table>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  th, td {
+    border-bottom: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+</style>

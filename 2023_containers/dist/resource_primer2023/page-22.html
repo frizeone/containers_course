@@ -1,0 +1,77 @@
+<h3 class="slidename">Закладки вертикальные</h3>
+
+<p>
+    Особенности - указание размера элементов через стиль, ограничений нет, единственное на слайде не забывать приписать скрипт.
+    Предпочтительно использовать, если внизу после закладок есть информация и имена закладок не длинные!
+</p>
+<p>
+    Размер закладок слева прописыватется в ul tabs_header <br>
+    Размер закладок справа прописыватется в div content_holder и должен быть на 3 пикселя меньше<br>
+    Размер блока справа по высоте прописыватется в div content_holder - min-height<br>
+</p>
+<br>
+
+<div id="vtab" class="abs_holder tabs_wrapper">
+    <ul class="tabs_header" style="width: 140px;">
+        <li class="first_tab tab_header_item">
+            <span class="header_item_before"></span><a href="">1</a><span class="header_item_after"></span></li>
+        <li class="tab_header_item">
+            <span class="header_item_before"></span><a href="">2</a><span class="header_item_after"></span></li>
+        <li class="tab_header_item tab_selected">
+            <span class="header_item_before"></span><a href="">3</a><span class="header_item_after"></span></li>
+        <li class="tab_header_item">
+            <span class="header_item_before"></span><a href="">4</a><span class="header_item_after"></span></li>
+        <li class="tab_header_item">
+            <span class="header_item_before"></span><a href="">5</a><span class="header_item_after"></span></li>
+        <li class="tab_header_item">
+            <span class="header_item_before"></span><a href="">6</a><span class="header_item_after"></span></li>
+        <li class="last_tab tab_header_item">
+            <span class="header_item_before"></span><a href="">7</a><span class="header_item_after"></span></li>
+    </ul>
+    <div class="content_holder" style="min-height: 300px; margin-left: 137px;">
+        <div class="content_holder_inner" style="overflow: hidden; position: relative; z-index: 1; padding: 10px 0;">
+            <div class="tab_content" style="display: none;">
+                Закладка1
+            </div>
+
+            <div class="tab_content" style="display: none;">
+                Закладка2
+            </div>
+
+            <div class="tab_content" style="display: block;">
+                Закладка3
+            </div>
+
+            <div class="tab_content" style="display: none;">
+                Закладка4
+            </div>
+
+            <div class="tab_content" style="display: none;">
+                Закладка5
+            </div>
+
+            <div class="tab_content" style="display: none;">
+                Закладка6
+            </div>
+            <div class="tab_content" style="display: none;">
+                Закладка7
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" class="ng-scope">
+    $(function () {
+        var $items = $('#vtab>ul>li');
+        $items.click(function () {
+            $items.removeClass('tab_selected');
+            $(this).addClass('tab_selected');
+
+            var index = $items.index($(this));
+            $('#vtab>div>div>div').hide().eq(index).show();
+        }).eq(0).click();
+    });
+</script>

@@ -1,0 +1,129 @@
+<h3 class="slidename">Появление и скрытие блоков дополнительной информации</h3>
+<br>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <p>Можно открывать и скрывать блики информации. Поэкспериментируйте:</p>
+
+        <p>Вот, к примеру,
+            <a role="button" data-toggle="collapse" href="" data-target="#collapseD1" aria-expanded="false" aria-controls="collapseD1" class="adop">
+                ссылка</a>
+            на скрытый блок
+        </p>
+        <br>
+
+        <div class="collapse" id="collapseD1">
+            <div class="alert alert-success">
+                Привет!
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn btn-sm btn-danger" type="button" data-toggle="collapse" data-target="#collapseD2" aria-expanded="false" aria-controls="collapseD2">
+                    <i class="fa fa-comment"></i> Кнопка
+                </button>
+            </div>
+            <div class="col-md-6">
+                <div class="collapse panel panel-default" id="collapseD2">
+                    <div class="panel-body">
+                        Привет!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr>
+
+
+        <div class="row">
+            <div class="col-md-3">
+                <button class="btn btn-sm btn-info center-block" type="button" data-toggle="collapse" data-target="#collapseD3" aria-expanded="false" aria-controls="collapseD3">
+                    <i class="fa fa-comment"></i> Кнопка
+                </button>
+                <br>
+                <button class="btn btn-sm btn-success center-block" type="button" data-toggle="collapse" data-target="#collapseD3" aria-expanded="false" aria-controls="collapseD3">
+                    <i class="fa fa-bar-chart"></i> Кнопка
+                </button>
+                <br>
+                <button class="btn btn-sm btn-warning center-block" type="button" data-toggle="collapse" data-target="#collapseD3" aria-expanded="false" aria-controls="collapseD3">
+                    <i class="fa fa-youtube-play"></i> Кнопка
+                </button>
+            </div>
+            <div class="col-md-9">
+                <div class="collapse" id="collapseD3">
+                    <div class="well">
+                        <button type="button" class="close" data-dismiss="collapseD3" aria-label="Close" data-toggle="collapse" data-target="#collapseD3" aria-expanded="false" aria-controls="collapseD3">
+                            <span aria-hidden="true">&times;</span></button>
+                        Привет! Закрой меня при необходимости!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr>
+
+
+        <div class="alert alert-warning alert-dismissible fade in" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <strong>Закрой меня</strong> при необходимости!
+        </div>
+
+    </div>
+    <div class="col-md-6">
+
+
+        <button class="btn btn-sm btn-danger center-block" onclick="changeColor('red')">сделать текст красным</button>
+        <div id="para1" class="bs-callout bs-callout-danger">текст черный</div>
+        <script>
+            function changeColor(newColor) {
+                var elem = document.getElementById("para1");
+                elem.style.color = newColor;
+            }
+        </script>
+
+
+        <hr>
+
+
+        <a data-toggle="tooltip" title="" data-original-title="приветик! о как!">наведи на меня</a>
+
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+<hr>
+
+        <button type="button" class="btn btn-primary" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="left" data-content="небольшое предложение небольшое предложение небольшое предложение небольшое предложение небольшое предложение небольшое предложение">
+            наведи!
+        </button>
+
+        <button type="button" class="btn btn-primary" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="небольшое предложение">
+            наведи!
+        </button>
+        <button type="button" class="btn btn-primary" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="right" data-content="небольшое предложение">
+            наведи!
+        </button>
+        <button type="button" class="btn btn-primary" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="небольшое предложение">
+            наведи!
+        </button>
+
+
+        <script>
+            $(function () {
+                $('[data-toggle="popover"]').popover()
+            })
+        </script>
+
+
+    </div>
+</div>
+
+
+

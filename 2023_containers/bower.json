@@ -1,0 +1,26 @@
+{
+  "name": "vitality-paket",
+  "description": "",
+  "main": "",
+  "authors": [
+    "vitaly afanasev"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular": "latest",
+    "angular-cookies": "latest",
+    "angular-sanitize": "latest",
+    "angular-route": "latest",
+    "animate-css": "~3.5.2",
+    "fancybox": "~2.1.5",
+    "es5-shim": "~4.5.9",
+    "jquery-zoom": "~1.7.18",
+    "fontawesome": "~4.7.0",
+    "jquery": "~3.1.1",
+    "json3": "~3.3.2",
+    "respond": "~1.4.2",
+    "bootstrap": "^5.2.0"
+  }
+}

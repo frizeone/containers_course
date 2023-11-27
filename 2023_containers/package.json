@@ -1,0 +1,28 @@
+{
+  "name": "vitality-pr",
+  "version": "1.0.0",
+  "dependencies": {
+    "@popperjs/core": "^2.11.5"
+  },
+  "devDependencies": {
+    "connect-livereload": "latest",
+    "grunt": "^1.4.1",
+    "grunt-concurrent": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-symlink": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-open": "latest",
+    "grunt-usemin": "latest"
+  },
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause"
+}

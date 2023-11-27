@@ -1,0 +1,84 @@
+<h3 class="slidename animated zoomIn">Анимация</h3>
+
+
+<div class="row">
+    <div class="col-md-4">
+
+        <h3 class="animated fadeIn" style="animation-delay: 1s">Не работает в IE 9</h3>
+        <h4 class="animated zoomInLeft" style="animation-delay: 1500ms">IE 9 поддерживается, но ограниченно!</h4>
+        <p class="animated zoomIn" style="animation-delay: 1700ms">Параграф с задержкой animation-delay 1700ms = 1,7 секунд</p>
+
+
+        <p class="animated rollIn" style="animation-delay: 4000ms"> Посмотреть можно на сайте <a href="https://daneden.github.io/animate.css/" target="_blank">Animate.css</a></p>
+
+    </div>
+    <div class="col-md-4">
+      <p>Бесконечная анимация:</p>
+    <img class="center-block img-circle animated pulse infinite" src="img/f5s.jpg">
+
+    </div>
+    <div class="col-md-4">
+        <p>Картинка:</p>
+        <img id="pr8" class="center-block img-rounded" src="img/f5s.jpg">
+        <br>
+        <button class="btn btn-info center-block" id="pr8-1">Встряхнуть картинку</button>
+        <script>
+            $('#pr8-1').click(function() {
+                $('#pr8').addClass('animated bounce');
+            });
+
+        </script>
+    </div>
+</div>
+
+<p>
+    Сами свойства:
+   <br> animation-duration – продолжительность анимации,
+    <br> animation-delay – задержка перед анимацией,
+    <br> animation-iteration-count – количесво повторений, можем поставить число, или infinite – для бесконечных повторений.
+</p>
+
+<hr>
+
+<div class="row">
+    <div class="col-md-6">
+        <h4 id="pr5" style="cursor: pointer;" class="text-center">Нажми на меня</h4>
+        <script>
+            $('#pr5').click(function() {
+                $('#pr5').addClass('animated shake');
+            });
+
+        </script>
+
+    </div>
+    <div class="col-md-6">
+
+        <h4 id="pr6" class="text-center">Наведи на меня мышкой</h4>
+        <script>
+            $('#pr6').hover(
+                function() {
+                    $(this).addClass('animated shake');
+                },
+                function() {
+                    $(this).removeClass('animated shake');
+                }
+            );
+        </script>
+
+    </div>
+</div>
+
+
+<h4 id="pr7" style="cursor: pointer;" class="text-center text-danger">Нажми на меня и я исчезну с эффектом</h4>
+<script>
+    $('#pr7').click(function() {
+        $('#pr7').addClass('animated shake');
+    });
+
+    $('#pr7').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+        $('#pr7').addClass('fadeOut', function() {$('#pr7').hide();});
+    });
+</script>
+
+
+

@@ -1,0 +1,103 @@
+<h3 class="slidename">JQuery</h3>
+
+<p>Нажми на каждый:</p>
+<div class="row">
+    <div class="col-md-6">
+
+        <ol class="rounded">
+            <li><a id="k1" href="">Элемент списка</a></li>
+            <li><a id="k2" href="">Элемент списка</a></li>
+            <li><a id="k3" href="">Элемент списка</a></li>
+            <li><a id="k4" href="">Элемент списка</a></li>
+            <li><a id="k5" href="">Элемент списка</a></li>
+        </ol>
+    </div>
+    <div class="col-md-6">
+        <div id="d1" class="alert alert-info animated fadeIn">
+            первое
+        </div>
+        <div id="d2" class="alert alert-info animated fadeIn">
+            второе
+        </div>
+        <div id="d3" class="alert alert-info animated fadeIn">
+            третье
+        </div>
+        <div id="d4" class="alert alert-info animated fadeIn">
+            четвертое
+        </div>
+        <div id="d5" class="alert alert-info animated fadeIn">
+            пятое
+        </div>
+
+
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function(){
+        $("#d1").hide();
+        $("#d2").hide();
+        $("#d3").hide();
+        $("#d4").hide();
+        $("#d5").hide();
+    });
+
+    $("#k1").click(function () {
+        $("#d1").show();
+        $("#d2").hide();
+        $("#d3").hide();
+        $("#d4").hide();
+        $("#d5").hide();
+    });
+
+    $("#k2").click(function () {
+        $("#d1").hide();
+        $("#d2").show();
+        $("#d3").hide();
+        $("#d4").hide();
+        $("#d5").hide();
+    });
+    $("#k3").click(function () {
+        $("#d1").hide();
+        $("#d2").hide();
+        $("#d3").show();
+        $("#d4").hide();
+        $("#d5").hide();
+    });
+    $("#k4").click(function () {
+        $("#d1").hide();
+        $("#d2").hide();
+        $("#d3").hide();
+        $("#d4").show();
+        $("#d5").hide();
+    });
+    $("#k5").click(function () {
+        $("#d1").hide();
+        $("#d2").hide();
+        $("#d3").hide();
+        $("#d4").hide();
+        $("#d5").show();
+    });
+</script>
+
+<hr>
+
+<h3 class="slidename">Рисунки</h3>
+
+
+
+<p>Фото по ссылке в тексте, не забыть прописать id и соотвествующий этому id скрипт -
+
+    <a class="fancybox aimg" href="img/f6.jpg"
+       title="подпись">пример</a>
+
+</p>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".fancybox").fancybox();
+    });
+
+</script>

@@ -1,0 +1,139 @@
+<h3 class="slidename">Карта на рисунке</h3>
+
+<p>
+Создаётся за 2 минуты на сайте <a href="https://www.image-map.net/" target="_blank">https://www.image-map.net/</a> или аналогичном ...
+</p>
+
+
+
+<p>
+    Всплывающие окна:
+</p>
+
+
+
+<img class="center-block" alt="схема" src="img/sxema-test.png" usemap="#myMap1" width="841" height="123" />
+<map name="myMap1" id="myMap1">
+    <area shape="rect" coords="1,87,269,121" class="" href="javascript:void(0);" data-toggle="modal" data-target="#Modal-info">
+    <area shape="rect" coords="285,86,555,122" class="" href="javascript:void(0);" data-toggle="modal" data-target="#Modal-warning">
+    <area shape="rect" coords="571,87,839,121" class="" href="javascript:void(0);" data-toggle="modal" data-target="#Modal-danger">
+</map>
+<br>
+<p class="text-center text-danger">
+    <small>Нажмите на блоки на схеме, чтобы просмотреть дополнительную информацию <i class="fa fa-hand-pointer-o" aria-hidden="true"></i></small>
+</p>
+
+
+<div class="modal fade modal-wide-700" id="Modal-info" tabindex="-1" role="dialog"
+     aria-labelledby="ModalLabel-1"
+     aria-hidden="true"><!-- modal -->
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="panel panel-info" style="margin-bottom: 0;">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Panel title
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-hidden="true">&times;</button>
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<div class="modal fade modal-wide-700" id="Modal-warning" tabindex="-1" role="dialog"
+     aria-labelledby="ModalLabel-1"
+     aria-hidden="true"><!-- modal -->
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="panel panel-warning" style="margin-bottom: 0;">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Panel title
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-hidden="true">&times;</button>
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade modal-wide-700" id="Modal-danger" tabindex="-1" role="dialog"
+     aria-labelledby="ModalLabel-1"
+     aria-hidden="true"><!-- modal -->
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="panel panel-danger" style="margin-bottom: 0;">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Panel title
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-hidden="true">&times;</button>
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+<p>
+    С закладками:
+</p>
+
+<img class="center-block" alt="схема" src="img/sxema-test.png" usemap="#myMap2" width="841" height="123" />
+<map name="myMap2" id="myMap2">
+    <area shape="rect" coords="1,87,269,121" class=""  href="javascript:void(0);" data-toggle="collapse" data-parent="#accordion2" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1" style="cursor: pointer;">
+    <area shape="rect" coords="285,86,555,122" class="" href="javascript:void(0);"  data-toggle="collapse" data-parent="#accordion2" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2" style="cursor: pointer;">
+    <area shape="rect" coords="571,87,839,121" class="" href="javascript:void(0);"  data-toggle="collapse" data-parent="#accordion2" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3" style="cursor: pointer;">
+</map>
+<br>
+
+<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true" style="border: none">
+    <div class="panel panel-default" style="border: none">
+        <div id="collapse0" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading0">
+            <div class="panel-body">
+                <p class="text-center text-danger">
+                    <small>Нажмите на блоки на схеме, чтобы просмотреть дополнительную информацию <i class="fa fa-hand-pointer-o" aria-hidden="true"></i></small>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default" style="border: none">
+        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+            <div class="panel-body">
+                1
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default" style="border: none">
+        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+            <div class="panel-body">
+                2
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default" style="border: none">
+        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+            <div class="panel-body">
+                3
+            </div>
+        </div>
+    </div>
+</div>

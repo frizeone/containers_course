@@ -1,0 +1,94 @@
+<h3 class="slidename">Рисунки</h3>
+
+<p>Одиночные фото не забыть прописать id и соотвествующий этому id скрипт - разные рамки у каждой фотке и разная подпись!</p>
+
+<a id="single_1" href="img/f6.jpg"
+   title="подпись">
+    <img src="img/f6.jpg" style="width: 23%">
+</a>
+<a id="single_2" href="img/f6.jpg"
+   title="подпись">
+    <img src="img/f6.jpg" style="width: 23%">
+</a>
+<a id="single_3" href="img/f6.jpg"
+   title="подпись">
+    <img src="img/f6.jpg" style="width: 23%">
+</a>
+<a id="single_4" href="img/f6.jpg"
+   title="подпись">
+    <img src="img/f6.jpg" style="width: 23%">
+</a>
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".fancybox").fancybox();
+
+        $("#single_1").fancybox({
+            helpers: {
+                title: {
+                    type: 'float'
+                }
+            }
+        });
+
+        $("#single_2").fancybox({
+            openEffect: 'elastic',
+            closeEffect: 'elastic',
+
+            helpers: {
+                title: {
+                    type: 'inside'
+                }
+            }
+        });
+
+        $("#single_3").fancybox({
+            openEffect: 'none',
+            closeEffect: 'none',
+            helpers: {
+                title: {
+                    type: 'outside'
+                }
+            }
+        });
+
+        $("#single_4").fancybox({
+            helpers: {
+                title: {
+                    type: 'over'
+                }
+            }
+        });
+
+    });
+</script>
+
+<br><br>
+
+
+
+<h3 class="slidename">Таблица</h3>
+
+
+<table class="table ng-scope">
+    <tbody>
+    <tr>
+        <td style="border-top: none; vertical-align: middle;"><small class="text-muted">Наличие</small></td>
+        <td style="border-top: none; vertical-align: middle;"><small class="text-muted">Приготовление</small></td>
+        <td style="border-top: none; vertical-align: middle;"><small class="text-muted">Контроль</small></td>
+    </tr>
+    <tr class="danger" style="height: 60px;">
+        <td style="vertical-align: middle;">Распорядительный</td>
+        <td style="vertical-align: middle;">Лично</td>
+        <td style="vertical-align: middle;">индикации</td>
+    </tr>
+    <tr class="warning" style="height: 60px;">
+        <td style="vertical-align: middle;">Распорядительный</td>
+        <td style="vertical-align: middle;">Оператор</td>
+        <td style="vertical-align: middle;">индикации</td>
+    </tr>
+    </tbody>
+</table>
