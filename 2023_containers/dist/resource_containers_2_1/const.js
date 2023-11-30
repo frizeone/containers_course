@@ -1,15 +1,19 @@
 /**
  * Created by vasa on 12.11.13. Modified by vitality on 29.06.21
  */
-var gnMaxPages = 56; // число слайдов в разделе
+var gnMaxPages = 58; // число слайдов в разделе
 angular.module('course').value('razdelName', 'Морские контейнерные перевозки');
 angular.module('course').value('sectionName', '');
 angular.module('course').value('pageCount', gnMaxPages);
 var SdanoFlag = true;
 
-var InteractionFlag = []; // указание слайдов с интерактивностями
+var InteractionFlag = [15, 33, ]; // указание слайдов с интерактивностями
 
 var dlina; // подобрано эмпирически
+
+
+
+
 switch (gnMaxPages) {
     case 1:
     case 2:
@@ -138,10 +142,17 @@ switch (gnMaxPages) {
     case 45:
         dlina = "920px";
         break;
-    case 46:
-        dlina = "940px";
+     case 47:
+        dlina = "1500px";
         break;
+    case 48:
+        dlina = "1500px";
+        break;
+    case 49:
+        dlina = "1500px";
+        break;
+                
     default:
-        dlina = "500px";
+        dlina = "900px";
         break;
 }
