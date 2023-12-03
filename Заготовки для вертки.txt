@@ -106,7 +106,42 @@
     });
 </script>
 
+Увеличе5ние картинки наведением на нее
+<style>
+    /* styles unrelated to zoom */
+    /* these styles are for the demo, but are not required for the plugin */
+    .zoom {
+        display:inline-block;
+        position: relative;
+    }
+    /* magnifying glass icon */
+    .zoom:after {
+        content:'';
+        display:block;
+        width:33px;
+        height:33px;
+        position:absolute;
+        top:0;
+        right:0;
+        background:url(../interface/icon.png);
+    }
+    .zoom img {
+        display: block;
+        cursor: grab;
+    }
+    .zoom img::selection { background-color: transparent; }
+</style>
 
+
+<script>
+    $(document).ready(function(){
+        $('#ex1').zoom();
+    });
+</script>
+
+<span class='zoom' id='ex1'>
+		<img src='img/one.jpg' style="width: 100%">
+</span>
 5. Таблица
 
  Уменьшене отступов в таблице:
