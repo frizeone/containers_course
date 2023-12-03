@@ -1,12 +1,51 @@
+<style>
+    /* styles unrelated to zoom */
+    /* these styles are for the demo, but are not required for the plugin */
+    .zoom {
+        display:inline-block;
+        position: relative;
+    }
+    /* magnifying glass icon */
+    .zoom:after {
+        content:'';
+        display:block;
+        width:33px;
+        height:33px;
+        position:absolute;
+        top:0;
+        right:0;
+        background:url(../interface/icon.png);
+    }
+    .zoom img {
+        display: block;
+        cursor: grab;
+    }
+    .zoom img::selection { background-color: transparent; }
+</style>
 <h3 class="slidename">Формы железнодорожных перевозочных документов </h3>
 
 <p>Пример формы накладной на перевозку грузов в контейнерах и порожних контейнеров (ф. ГУ-27в)  </p>
 
-<div class=""><img class="rounded mx-auto d-block" style="width: 100%;" src="img/"></div>
+<!-- <div class=""><img class="rounded mx-auto d-block" style="width: 100%;" src="img/3-1-11.png"></div> -->
 
 
 
 
+<script>
+    $(document).ready(function(){
+        $('#ex1').zoom();
+    });
+</script>
+
+<span class='zoom' id='ex1'>
+		<img src='img/3-1-11.png' style="width: 100%">
+</span>
+
+
+
+<p class="text-center text-info">
+    <small class="blue_text"><i class="fa fa-search-plus" aria-hidden="true"></i> Наведите на схему мышкой, чтобы увеличить её!</small>
+</p>
 
 
 

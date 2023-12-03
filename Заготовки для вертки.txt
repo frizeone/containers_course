@@ -41,7 +41,7 @@
 
    Картинка справа текст
 	<div class="row">
-    <div class="col-md-4"><div class=""><img class="rounded mx-auto d-block" src="img/2_17 (1).png"></div></div>
+    <div class="col-md-4"><div class=""><img class="rounded mx-auto d-block" style="width: 100%;" src="img/2_17 (1).png"></div></div>
     <div class="col-md-8">
       <p>  Текст    </p>
 	  </div>
@@ -79,6 +79,33 @@
 	    <li class="list-group-item"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>   ✔     </li>
             
         </ul>
+
+Увелечение картинки нажатием:
+<a id="single_1" href="img/3-3-4.png" title="">
+    <img src="img/3-3-4.png" style="width: 100%">
+ </a>
+ <p class="text-center text-info">
+    <small class="blue_text"><i class="fa fa-search-plus" aria-hidden="true"></i> Нажмите на картинку мышкой, чтобы увеличить её!</small>
+</p>
+
+
+ <script type="text/javascript">
+    $(document).ready(function () {
+        $(".fancybox").fancybox();
+
+        $("#single_1").fancybox({
+            helpers: {
+                title: {
+                    type: 'float'
+                }
+            }
+        });
+
+        
+
+    });
+</script>
+
 
 5. Таблица
 
@@ -169,3 +196,33 @@
     background-color: #f2f2f2;
   }
 </style>
+
+
+
+
+
+
+<a id="single_1" href="img/f6.jpg" title="">
+   <img src="img/f6.jpg" style="width: 23%">
+</a>
+
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".fancybox").fancybox();
+
+        $("#single_1").fancybox({
+            helpers: {
+                title: {
+                    type: 'float'
+                }
+            }
+        });
+
+        
+
+    });
+</script>
