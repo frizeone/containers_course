@@ -2,12 +2,12 @@
  * Created by vasa on 12.11.13. Modified by vitality on 29.06.21
  */
 var gnMaxPages = 39; // число слайдов в разделе
-angular.module('course').value('razdelName', 'Автоматическая установка маршрутов на станциях МЦК');
+angular.module('course').value('razdelName', 'Перевозки контейнеров автотранспортом');
 angular.module('course').value('sectionName', '');
 angular.module('course').value('pageCount', gnMaxPages);
 var SdanoFlag = true;
 
-var InteractionFlag = []; // указание слайдов с интерактивностями
+var InteractionFlag = [12, 13]; // указание слайдов с интерактивностями
 
 var dlina; // подобрано эмпирически
 switch (gnMaxPages) {

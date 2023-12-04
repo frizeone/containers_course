@@ -1,7 +1,7 @@
 /**
  * Created by vasa on 12.11.13. Modified by vitality on 29.06.21
  */
-var gnMaxPages = 22; // число слайдов в разделе
+var gnMaxPages = 20; // число слайдов в разделе
 angular.module('course').value('razdelName', 'Типы контейнеров');
 angular.module('course').value('sectionName', '');
 angular.module('course').value('pageCount', gnMaxPages);

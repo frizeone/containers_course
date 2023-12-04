@@ -7,7 +7,7 @@ angular.module('course').value('sectionName', '');
 angular.module('course').value('pageCount', gnMaxPages);
 var SdanoFlag = true;
 
-var InteractionFlag = [16]; // указание слайдов с интерактивностями
+var InteractionFlag = [12 ,16]; // указание слайдов с интерактивностями
 
 var dlina; // подобрано эмпирически
 switch (gnMaxPages) {
